@@ -1,0 +1,134 @@
+.div1 {
+    /* Add any styles you need for the image container here */
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.div1:hover {
+    transform: scale(1.1); /* Make the image bigger on hover */
+}
+
+.div1:hover .overlay {
+    opacity: 1; /* Make the overlay visible on hover */
+    cursor: pointer;
+}
+
+/* Add this CSS code to your <style> block or in a separate CSS file */
+/* Button hover effect */
+.btn-white {
+    transition: background-color 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #4BA586;
+    color: white;
+}
+
+/* Image zoom-in effect */
+.img-zoom {
+    transition: transform 0.3s ease;
+}
+
+.img-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* Add this CSS code to your <style> block or in a separate CSS file */
+.shopping-item {
+    transition: transform 0.3s ease;
+}
+
+.shopping-item:hover {
+    transform: scale(1.05);
+}
+/* Add this CSS code to your <style> block or in a separate CSS file */
+/* Add this CSS code to your <style> block or in a separate CSS file */
+.shopping-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.overlay h3, .overlay p {
+    margin-bottom: 80px;
+    width: 400px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Add this CSS code to your <style> block or in a separate CSS file */
+
+/* Create a class to style the overlay */
+.overlay-skew {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style the pseudo-element for the overlay */
+.overlay-skew::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.85) 50%, transparent 50%);
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: transform 0.5s ease;
+    opacity: 0;
+}
+
+.overlay-skew:hover::after {
+    transform: scaleY(0);
+    opacity: 1;
+
+}
+.image-container {
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden; /* Ensures the image won't overflow the container */
+    position: relative; /* Needed for the absolute positioning of the image on hover */
+}
+
+.enlarge-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; /* Add a transition for smooth effect */
+}
+
+.enlarge-image:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+
+
